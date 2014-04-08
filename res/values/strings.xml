@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">slave</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_start">Start</string>
+    <string name="action_stop">Stop</string>
+    
+    <string name="master_name">Control panel</string>
+    <string name="slave_name">Remote terminal</string>
+    
+    <string name="res_low">320x240</string>
+    <string name="res_medium">640x480</string>
+    <string name="res_high">1280x720</string>
+
+    <string name="msg_idle">Select video size, press Start to begin</string> 
+    <string name="msg_start_error">Can not start http server..</string>
+    <string name="msg_prepare_waiting">Checking camera ..</string>
+    <string name="msg_prepare_ok">Camera is OK. Using browser access: </string>
+    <string name="msg_prepare_error1">Your phone do not support MP4+AMR_BN format, please exit by menu.</string>
+    <string name="msg_prepare_error2">Prepareing is error, please try again.</string>
+    <string name="msg_streaming">Do streaming</string>
+    
+    <string name="Remote_Terminal_Info_TextView">Remote terminal mode</string>
+    <string name="Remote_Terminal_name">Remote terminal</string>
+    <string name="Remote_Terminal_GPS">GPS: </string>
+    <string name="Remote_GPS_info">no info!</string>
+    <string name="Remote_GPS_info_TURN_OFF">GPS service is turned off!</string>
+    <string name="Remote_State_GPS_ON">GPS ON:</string>
+    <string name="Remote_State_GPS_OFF">GPS OFF:</string>
+    <string name="Remote_terminal_Network_state">Connection_On</string>
+    <string name="Remote_Terminal_Stop">Stop remote</string>
+    <string name="Remote_Terminal_Start">Start remote</string>
+    <string name="RCV_INFO">RCV_INFO</string>
+    <string name="RCV_servo_angle_display">RCV_servo_angle:</string>
+    <string name="RCV_servo_angle">no info</string>
+    <string name="RCV_motor_speed_display">RCV_motor_speed:</string>
+    <string name="RCV_motor_speed">no info</string>
+    <string name="Control_Terminal">Control_Terminal</string>
+    <string name="Remote_Terminal">Remote_Terminal</string>
+    <string name="TextView1">Welcome to our App-Console center</string>
+    <string name="Exit">Exit</string>
+
+</resources>

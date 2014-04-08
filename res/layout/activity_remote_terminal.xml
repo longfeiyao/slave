@@ -1,0 +1,138 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="always"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:scrollbars="vertical"
+    tools:context=".MainActivity_Remote_Terminal" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginTop="30dp" >
+
+        <TextView
+            android:id="@+id/Remote_Terminal_GPS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:text="@string/Remote_Terminal_GPS"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/Remote_GPS_info"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="0dp"
+            android:layout_weight="0.88"
+            android:text="@string/Remote_GPS_info"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Remote_terminal_Network_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Remote_Terminal_Start"
+        android:layout_alignTop="@+id/linearLayout1"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:text="@string/Remote_terminal_Network_state"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/RCV_servo_angle_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_marginTop="0dp"
+        android:text="@string/RCV_servo_angle_display" />
+
+    <TextView
+        android:id="@+id/RCV_motor_speed_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/RCV_servo_angle_display"
+        android:layout_below="@+id/RCV_servo_angle_display"
+        android:layout_marginTop="0dp"
+        android:text="@string/RCV_motor_speed_display" />
+
+    <TextView
+        android:id="@+id/RCV_motor_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/RCV_motor_speed_display"
+        android:layout_alignBottom="@+id/RCV_motor_speed_display"
+        android:layout_alignLeft="@+id/RCV_servo_angle"
+        android:layout_marginTop="10dp"
+        android:text="@string/RCV_motor_speed" />
+
+    <TextView
+        android:id="@+id/RCV_servo_angle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/RCV_servo_angle_display"
+        android:layout_alignBottom="@+id/RCV_servo_angle_display"
+        android:layout_toRightOf="@+id/Remote_Terminal_Start"
+        android:text="@string/RCV_servo_angle" />
+
+    <FrameLayout
+        android:id="@+id/camera_preview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/capture_Test"
+        android:layout_alignLeft="@+id/RCV_motor_speed_display"
+        android:layout_alignRight="@+id/linearLayout2"
+        android:layout_below="@+id/RCV_motor_speed_display"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp" >
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/Remote_Terminal_Start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Remote_Terminal_Stop"
+        android:layout_alignBottom="@+id/Remote_Terminal_Stop"
+        android:layout_alignLeft="@+id/RCV_motor_speed_display"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="0dp"
+        android:text="@string/Remote_Terminal_Start" />
+
+    <Button
+        android:id="@+id/capture_Test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Remote_Terminal_Start"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        android:text="capture" />
+
+    <Button
+        android:id="@+id/Remote_Terminal_Stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/RCV_motor_speed"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="14dp"
+        android:text="@string/Remote_Terminal_Stop" />
+
+</RelativeLayout>
